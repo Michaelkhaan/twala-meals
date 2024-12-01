@@ -4,7 +4,6 @@ import Delivery from "./components/delivery/Delivery";
 import Navbar from "./components/navbar/Navbar";
 import styles from "./components/card/card.module.scss";
 import Image from "next/image";
-import App from "./components/app/App";
 import Footer from "./components/footer/Footer";
 
 export default function Home() {
@@ -57,18 +56,7 @@ export default function Home() {
           unoptimized
         />
       </div>
-      <div className={styles?.wrap}>
-        <App />
-        <Image
-          src="/Female hand.png"
-          alt=""
-          width={0}
-          height={0}
-          className={styles?.female}
-          unoptimized
-        />
-      </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
