@@ -1,0 +1,102 @@
+.card {
+    width: 100%;
+    margin-top: 20px;
+  
+    .image {
+      width: 100%;
+    }
+  
+    .heading {
+      font-size: 20px;
+      font-family: "open-sans";
+      font-weight: 800;
+      line-height: 37px;
+      text-align: center;
+    }
+  
+    .paragraph {
+        font-size: 20px;
+        font-family: "open-sans";
+        font-weight: 400;
+        line-height: 27px;
+        width: 300px;
+        text-align: center;
+        margin-top: 6px;
+      
+        @media (max-width: 650px) {
+          width: 100%;
+        }
+        @media (min-width: 901px) {
+            width: 100%;
+          }
+      }
+  
+    .button {
+      background-color: #fd0000;
+      border-radius: 42px;
+      padding: 6px 0;
+      color: #fff;
+      font-size: 20px;
+      font-family: "lato";
+      font-weight: 800;
+      line-height: 24px;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  
+  .wrapper {
+    padding: 6px 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+  
+    // 3 cards on large screens (above 900px)
+    @media (min-width: 901px) {
+        padding: 6px 50px;
+      .card {
+        width: calc(33.333% - 26.67px);
+      }
+    }
+  
+    // 2 cards above 650px (medium screens)
+    @media (min-width: 651px) and (max-width: 900px) {
+        padding: 6px 10px;
+      .card {
+        width: calc(50% - 20px);
+      }
+    }
+  
+    // 1 card on small screens (below 650px)
+    @media (max-width: 650px) {
+        padding: 6px 10px;
+      .card {
+        width: 100%;
+      }
+    }
+  }
+
+  .premiumcard{
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    .getpremium{
+        width: 100%;
+        height: 100%;
+      }
+      @media (max-width: 650px) {
+        height: 100%;
+    }
+  }
+
+  .wrap{
+    width: 100%;
+    display: flex;
+    .female{
+        width: 50%;
+    }
+}
+  
+  

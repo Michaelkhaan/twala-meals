@@ -12,6 +12,12 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      boxShadow: {
+        heroCard: "0px 4px 6.3px 0px #00000040",
+      },
+      fontFamily: {
+        OpenSans: ["var(--Open_sans)"],
+      },
     },
   },
   plugins: [],

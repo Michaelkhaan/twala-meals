@@ -1,0 +1,55 @@
+.navbar{
+    padding: 6px 20px 6px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        .image{
+            width: 63px;
+            height: 59px;
+        }
+        .text{
+            width: 298px;
+            height: 59px;
+        }
+    }
+    .buttons{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .login{
+            background-color: #FD0000;
+            border-radius: 42px;
+            padding: 2px 20px 2px 20px;
+            color: #FFFFFF;
+            font-size: 20px;
+            font-weight: 800;
+            font-family: "openSans";
+        }
+        .getstarted{
+            background-color: black;
+            border-radius: 42px;
+            padding: 2px 20px 2px 20px;
+            color: #FFFFFF;
+            font-size: 20px;
+            font-weight: 800;
+            font-family: "openSans";
+        }
+    }
+}
+
+// Using Media Query
+
+@media (max-width: 660px) {
+    .navbar {
+        padding: 6px 10px 6px 10px;
+      .logo {
+        .text {
+          display: none;  // Hide the text on small screens
+        }
+      }
+    }
+  }
