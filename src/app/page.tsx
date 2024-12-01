@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/Navbar";
 import styles from "./components/card/card.module.scss";
 import Image from "next/image";
 import App from "./components/app/App";
+import Footer from "./components/footer/Footer";
 
 export default function Home() {
   const cardData = [
@@ -67,6 +68,7 @@ export default function Home() {
           unoptimized
         />
       </div>
+      <Footer/>
     </div>
   );
 }
